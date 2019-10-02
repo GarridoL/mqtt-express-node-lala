@@ -2,12 +2,6 @@
 
 <head>
   <title>MQTT</title>
-  <script src="jquery-3.4.1.min.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
     .container {
       width: 35%;
@@ -127,22 +121,8 @@
       </tr>
     </table>
   </div>
-  <script>
-
-    $(document).ready(function () {
-      $(document).on('click', '#btnConnect', function () {
-        $('#status').val('Successfully connected.');
-      });
-
-      $(document).on('click', '#btnDisconnect', function () {
-        $('#status').val('Successfully disconnected.');
-      });
-    });
-
-
-  </script>
 </body>
-<script src="public/scripts/browserMqtt.js"></script>
-<script src="public/scripts/controller.js"></script>
+<script src="scripts/browserMqtt.js"></script>
+<script src="scripts/controller.js"></script>
 
 </html>
