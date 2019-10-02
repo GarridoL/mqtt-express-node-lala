@@ -18,5 +18,9 @@
   "homepage": "https://github.com/LGarrido0708/mqtt-express-node-lala#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "engines": {
+    "node": "10.15"
+}
+
 }
