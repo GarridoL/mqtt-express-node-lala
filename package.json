@@ -1,0 +1,22 @@
+{
+  "name": "mqtt-express-node-lala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LGarrido0708/mqtt-express-node-lala.git"
+  },
+  "author": "Lalaine Garrido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LGarrido0708/mqtt-express-node-lala/issues"
+  },
+  "homepage": "https://github.com/LGarrido0708/mqtt-express-node-lala#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
