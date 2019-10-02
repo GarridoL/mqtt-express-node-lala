@@ -1,5 +1,4 @@
 var broker = true;
-var subscribedTopic= [];
 var dt = new Date();
 var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
 
@@ -11,17 +10,17 @@ $(document).ready(function(){
 						$("#status").text("Successfully connected!");
 				}) 
 				client.on("message", function (topic, payload) {
-					$("table").append("<tr><td>" + topic + "</td><td>" + payload +'</td><td>' + time + "</td></tr>")
+					$("table").append("<tr id='tr'><td>" + topic + "</td><td>" + payload +'</td><td>' + time + "</td></tr>")
 				})
 		})
 })
 
 $(document).ready(function(){
 	$("#btnDisconnect").click(function(event){
-    event.preventDefault();
+	event.preventDefault();
 		client.end();
-		$("#status").text("Disconnected!");
-		$("table").text(null);
+		$("#status").text("Successfully Disconnected!");
+		$("table").find("tr:gt(0)").remove();
 	})
 })
 
@@ -33,11 +32,7 @@ $(document).ready(function(){
 			client.on("message", function (topic, payload) {
 				(topic , payload)
 			broker = true;
-			for (var e in subscribedTopic){
-				if (!e == $("#Subscribe-topic").val()){
-					console.log('hi');
-				}
-			}
+			
 	})
 })
 })
